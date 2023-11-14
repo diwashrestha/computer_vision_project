@@ -1,1 +1,2 @@
-# stunning_computer_vision_project
+# Overview
+Welcome to the Computer Vision Projects Repository, a centralized hub for diverse projects spanning image recognition, object detection, and segmentation. Here, I delve into the realm of cutting-edge computer vision algorithms and tools, showcasing innovative applications and fostering exploration in the field of visual intelligence
