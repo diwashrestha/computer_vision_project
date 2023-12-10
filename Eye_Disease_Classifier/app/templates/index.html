@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Eye Disease Classifier!</h1>
+    <p class="lead">Upload your eye image and get the health result.</p>
+    <hr class="my-4">
+    <form action="/upload/" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <input type="file" class="form-control-file" name="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+
+    {% if filename %}
+        <h3>Uploaded Image: {{ filename }}</h3>
+        <img src="{{filepath}}" alt="{{ filename }}">
+        <div>
+            <h3>Result: {{ result }}</h3>
+
+        </div>
+
+    {% endif %}
+</div>
+{% endblock %}
